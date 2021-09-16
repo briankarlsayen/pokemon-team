@@ -1,0 +1,159 @@
+.pokemon-card {
+  text-align: center;
+  width: 75%;
+  border: 1px solid black;
+  margin-left: 10%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #e4fbff;
+  text-transform: uppercase;
+}
+
+.pokemonCard-imgbackground {
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+}
+
+.pokemonCard-img > img {
+  margin-top: 20px;
+  border: 1px solid black;
+  width: 125px;
+  background-color: #edeef7;
+}
+
+.pokemonCard-remove {
+  background: transparent;
+  border: none;
+  color: black;
+  width: 38px;
+  position: absolute;
+  right: 1em;
+}
+
+.pokemonCard-remove .MuiSvgIcon-root {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.pokemonCard-btn {
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.pokemonCard-btn:hover {
+  background-color: #9180fc;
+  color: white;
+}
+
+.pokemonCard-img .img-type {
+  font-size: 0.6em;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-left: 3px;
+  color: black;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.pokemonCard-type {
+  display: flex;
+  justify-content: center;
+}
+
+.pokemon-card h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.pokemon-card > h3 {
+  font-size: 1em;
+}
+
+.pokemon-card > p {
+  font-size: 0.85em;
+}
+
+.pokemonCard-stats {
+  margin: 0 20% 20px 20%;
+}
+
+.pokemonCard-abilities {
+  border-top: 1px solid black;
+  padding-bottom: 20px;
+}
+
+.pokemonCard-stats p {
+  text-align: left;
+}
+
+.pokemonCard-stats p span {
+  float: right;
+}
+
+.pokemonCard-type {
+  display: flex;
+}
+
+.subtitle,
+.name {
+  padding: 10px;
+}
+
+.pokemon-team {
+  grid-template-columns: unset !important;
+  position: relative;
+}
+
+@media only screen and (min-width: 800px) {
+  .pokemon-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    border: none;
+    background-color: transparent;
+  }
+
+  .pokemonCard-imgbackground {
+    text-align: center;
+    background-color: #e4fbff;
+    border: 1px solid black;
+    border-radius: 10px;
+    justify-content: center;
+  }
+
+  .pokemonCard-right {
+    background-color: #e4fbff;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+
+  .pokemonCard-img img {
+    min-width: 150px;
+  }
+
+  .pokemon-card h2 {
+    border: none;
+  }
+
+  .pokemonCard-stats {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .pokemonCard-stats p {
+    padding: 0 10%;
+  }
+
+  .subtitle {
+    text-align: left;
+    padding-left: 10%;
+  }
+  .pokemonCard-abilities .text {
+    padding-left: 10%;
+    text-align: left;
+  }
+}
